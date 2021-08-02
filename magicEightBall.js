@@ -1,3 +1,4 @@
+//The user will be able to input a question, then our program will output a random fortune.
 let userName = '';
 (userName==='')?(console.log('Hello!')):(console.log(`Hello, ${userName}!`));
 let userQuestion='Will I become a proficient Javascript Developer by the End of this year?';
