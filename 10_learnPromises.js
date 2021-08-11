@@ -106,3 +106,14 @@ setTimeout(()=>{
 });
 },5000)
 
+
+
+
+//Promise.all() : accepts an array of promises. If all of them resolve, Promise.all() will resolve with the resolvedValue as array of resolvedValue from all array of Promises respectively. 
+//If any one of the array of Promises Fail/reject, the Promise.all() will also reject with that rejectedValue.
+const checkSunglasses = checkAvailability('sunglasses','Favorite Supply Co.');
+const checkPants = checkAvailability('pants','Favorite Supply Co.');
+const checkBags = checkAvailability('bags','Favorite Supply Co.')
+
+Promise.all([ checkSunglasses,checkPants,checkBags]).then(onFulfill).catch(onReject);
+
